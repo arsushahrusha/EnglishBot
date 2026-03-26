@@ -1,0 +1,74 @@
+.env
+.env.*
+!.env.example
+config.ini
+secrets.json
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+
+# Дистрибуция / сборка
+build/
+dist/
+
+# Виртуальные окружения
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# Типизация
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytype/
+.pyre/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Логи
+*.log
+logs/
+*.db
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encdata
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+
+# Временные файлы
+*.tmp
+*.temp
+.cache/
+tmp/
+temp/
