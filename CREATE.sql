@@ -1,0 +1,19 @@
+CREATE TABLE IF NOT EXISTS users (
+	user_id SERIAL PRIMARY KEY,
+	tg_id NUMERIC(10) UNIQUE,
+	username VARCHAR(60) NOT NULL,
+	created_at DATA
+);
+
+CREATE TABLE words (
+	word_id SERIAL PRIMARY KEY,
+	en VARCHAR(100) NOT NULL,
+	ru VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE users_to_words (
+	id SERIAL PRIMARY KEY, 
+	user_id INTEGER NOT NULL REFERENCES users(user_id),
+	word_if INTEGER NOT NULL REFERENCES words(word_id),
+	is_deleted BOOLEAN NOT NULL
+);
