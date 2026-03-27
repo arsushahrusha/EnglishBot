@@ -9,10 +9,6 @@ import database
 
 print('Start telegram bot...')
 
-telebot.apihelper.proxy = {
-    'https': 'socks5://64.227.76.27:1080'
-}
-
 state_storage = StateMemoryStorage()
 token_bot = BOT_TOKEN
 bot = TeleBot(token_bot, state_storage=state_storage)
